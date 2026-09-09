@@ -4,13 +4,13 @@
 **Mkdir**: mkdir (Make Directory) is used to create one or more new directories (folders) in your file system. By default, it creates the folder in your current working directory unless you specify a different path.
 
 ```
-mkdir test_dir
+$ mkdir test_dir
 ```
 ![mkdir_s.png](/screenshots/mkdir_s.png)
 
 You can also use the -p flag to create nested parent and child directories all at once (e.g., mkdir -p folder1/folder2).
 ```
-mkdir -p test_dir1/ test_dir2/ test_dir3
+$ mkdir -p test_dir1/ test_dir2/ test_dir3
 ```
 ![mkdir-p_s.png](/screenshots/mkdir-p_s.png)
 
@@ -18,7 +18,7 @@ mkdir -p test_dir1/ test_dir2/ test_dir3
 
 **Touch**: touch is primarily used to create new, empty files instantly if they do not already exist. If the file already exists, running the command updates its access and modification timestamps to the current time without changing its contents.
 ```
-touch example.txt 
+$ touch example.txt 
 ```
 ![touch_s.png](/screenshots/touch_s.png)
 
@@ -26,7 +26,7 @@ touch example.txt
 
 **Mv**: mv (Move) is used to move files or directories from one location to another in your file system. It is also the standard command used to rename a file or folder by moving it to the same directory with a new name.
 ```
-mv example.txt renamed_exapmle.txt
+$ mv example.txt renamed_exapmle.txt
 ```
 ![rename_s.png](/screenshots/rename_s.png)
 
@@ -35,7 +35,7 @@ mv example.txt renamed_exapmle.txt
 
 **Cat**: cat (Concatenate) is used to display the entire contents of one or more text files directly in the terminal without opening an editor. It is also commonly used to combine multiple files into a single new file or to append text to an existing file using redirection operators (> or >>).
 ```
-cat /etc/passwd
+$ cat /etc/passwd
 ```
 ![cat_s.png](/screenshots/cat_s.png)
 
@@ -45,7 +45,7 @@ cat /etc/passwd
 
 You can change the number of lines displayed by using the -n flag followed by the desired count (e.g., head -n 5 filename.txt).
 ```
-head -n 5 /etc/passwd
+$ head -n 5 /etc/passwd
 ```
 ![head_s.png](/screenshots/head-5_s.png)
 
@@ -56,7 +56,7 @@ head -n 5 /etc/passwd
 You can also use the -f (follow) flag to monitor a file in real-time as new lines are appended, which is commonly used for viewing live log files.
 
 ```
-tail -n 5 /etc/passwd
+$ tail -n 5 /etc/passwd
 ```
 
 ### 3. Searching for Patterns
@@ -66,7 +66,7 @@ tail -n 5 /etc/passwd
 
 You can use flags like -i to ignore case sensitivity, -r to search recursively through directories, and -n to display line numbers with the results.
 ```
-cat /etc/passwd | grep “root”
+$ cat /etc/passwd | grep “root”
 ```
 ![tail-5_s.png](/screenshots/tail-5_s.png)
 
@@ -77,7 +77,7 @@ cat /etc/passwd | grep “root”
 
 You can use the -r flag to recursively compress an entire directory and all of its contents.
 ```
-zip -r test_dir.zip test_dir
+$ zip -r test_dir.zip test_dir
 ```
 ![zip_s.png](/screenshots/zip_s.png)
 
@@ -87,7 +87,7 @@ zip -r test_dir.zip test_dir
 
 You can use the -d flag to extract the contents into a specific destination folder instead of the current one.
 ```
-unzip test_dir.zip -d unzipped_dir
+$ unzip test_dir.zip -d unzipped_dir
 ```
 ![unzip_s.png](/screenshots/unzip_s.png)
 
@@ -97,7 +97,7 @@ unzip test_dir.zip -d unzipped_dir
 
 You can use the -c flag to resume a partially downloaded file after a connection interruption, or the -r flag to download entire websites recursively.
 ```
-wget https://github.com/ishandevani/Finance-Banking---Advanced-Threat-Intelligence-Platform-TIP-Dynamic-Policy-Enforcer/blob/main/screenshots/Mongo4.png
+$ wget https://github.com/ishandevani/Finance-Banking---Advanced-Threat-Intelligence-Platform-TIP-Dynamic-Policy-Enforcer/blob/main/screenshots/Mongo4.png
 ```
 ![wget_s.png](/screenshots/wget_s.png)
 
@@ -105,8 +105,8 @@ wget https://github.com/ishandevani/Finance-Banking---Advanced-Threat-Intelligen
 **Chmod**: chmod (Change Mode) is used to modify the read, write, and execute permissions of files and directories for owners, groups, and other users. You can change these access levels using either symbolic notation (like u+x to add execute permissions) or octal numbers (like 755 for standard web folders).
 
 ```
-sudo chmod 444 secure.txt
-ls -la
+$ sudo chmod 444 secure.txt
+$ ls -la
 ```
 ![chmod_s.png](/screenshots/chmod_s.png)
 
@@ -114,7 +114,7 @@ ls -la
 **Export**: export is used to set environment variables in the Linux shell, making them available to any child processes or scripts started from that session. Without it, a newly created variable is only local and cannot be read by commands run inside that terminal.
 
 ```
-export MY_VAR="Hello, Linux!"
-Echo $MY_VAR
+$ export MY_VAR="Hello, Linux!"
+$ Echo $MY_VAR
 ```
 ![export_s.png](/screenshots/export_s.png)
